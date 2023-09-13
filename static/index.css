@@ -133,7 +133,7 @@ body {
 
 .close-button {
     position: absolute;
-    top: 10px;
+    top: 3px;
     right: 10px;
     cursor: pointer;
     width: 30px;
@@ -148,6 +148,26 @@ body {
 }
 
 .close-button span {
+    font-weight: bold;
+}
+
+.tab-button {
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    border: 2px solid purple;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-button span {
     font-weight: bold;
 }
 

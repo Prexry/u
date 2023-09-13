@@ -28,3 +28,24 @@ function closeBanner() {
             banner.style.display = "none";
         }, 1000);
     }
+
+    function navigate(url) {
+        window.location.href = url;
+      }
+          function openTab() {
+                  var ccsdWindow = window.open("about:blank#UV", "CCSDUV");
+      
+                  if (ccsdWindow) {
+                      var iframe = document.createElement("iframe");
+                      iframe.src = "https://ultra-ccsd.koyeb.app";
+                      iframe.style.position = "fixed";
+                      iframe.style.top = "0";
+                      iframe.style.left = "0";
+                      iframe.style.width = "100%";
+                      iframe.style.height = "100%";
+                      iframe.style.border = "none";
+                      ccsdWindow.document.body.appendChild(iframe);
+                  } else {
+                      alert("Pop-up blocked. Please enable pop-ups for this website.");
+                  }
+              }
