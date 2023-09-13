@@ -19,3 +19,12 @@ function isUrl(val = ''){
     if (/^http(s?):\/\//.test(val) || val.includes('.') && val.substr(0, 1) !== ' ') return true;
     return false;
 };
+
+/*banner*/
+function closeBanner() {
+        var banner = document.getElementById("banner");
+        banner.style.animation = "fadeOut 1s ease-in-out";
+        setTimeout(function () {
+            banner.style.display = "none";
+        }, 1000);
+    }
