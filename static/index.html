@@ -72,8 +72,15 @@
         <p>󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 Apollo UV | Never trust charles, dont do it, I swear you will regret it.
     </div>
     <form>
-        <input placeholder="Search">
+        <input type="text" id="searchInput" placeholder="Search">
     </form>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.location.href.includes("#youtube")) {
+                document.getElementById('searchInput').value = 'https://www.youtube.com/';
+            }
+        });
+    </script>
     <footer>
         <a title="Apollo's main page." href="#">Apollo</a>
         <a title="Join the Discord!" href="https://discord.gg/ThBKJUuw6u">Discord</a>
