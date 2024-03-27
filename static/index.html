@@ -58,11 +58,11 @@
 </head>
 
 <body>
-    <div class="banner" id="banner">
+    <!--<div class="banner" id="banner">
         Ultraviolet is back!
         <div class="close-button" onclick="closeBanner()"><span>X</span></div>
         <div class="tab-button" title="Open in a new tab." onclick="openTab()"><span>↗</span></div>
-    </div>
+    </div>-->
 
     <div title="Smirk" class="logo-wrapper">
         <img class="logo" src=""
@@ -75,12 +75,21 @@
     <form>
         <input type="text" id="searchInput" placeholder="Search">
     </form>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            if (window.location.href.includes("#youtube")) {
-                document.getElementById('searchInput').value = 'https://www.youtube.com/';
-            }
-        });
+       <script>
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.location.href.endsWith('#gg')) {
+        var url = 'https://now.gg/iframe/snippet?app_pkg=com.roblox.client&partner=gamenora';
+        window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+    } else if (window.location.href.endsWith('#gfn')) {
+        var url = 'https://www.nvidia.com/en-us/account/gfn/?linkId=100000109929505';
+        window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+    } else if (window.location.href.endsWith('#youtube')) {
+        var url = 'https://www.youtube.com';
+        window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+    }
+});
+
+
     </script>
     <footer>
         <a title="Apollo's main page." href="#">Apollo</a>
